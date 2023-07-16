@@ -170,6 +170,9 @@ span{
 font-size: 1.8rem;
 }
 
+.heading{
+    font-size: large;
+}
 .skills{
     display: flex;
     align-items: center;
@@ -181,4 +184,18 @@ font-size: 1.8rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
+}
+
+.skill-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.skill-card:hover{
+    border-radius: 1rem solid;
+    transform: scale(1.05);
 }
