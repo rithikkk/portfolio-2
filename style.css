@@ -25,6 +25,7 @@ body{
     color: #fff;
 }
 
+
 .header{
     background: rgba(0, 0, 0, 0.9);
     position: fixed;
@@ -53,6 +54,8 @@ body{
 .menu-bar a:hover{
     color: #FF4500;
 }
+
+
 
 #menu-btn{
     font-size: 3rem;
@@ -172,6 +175,30 @@ font-size: 1.8rem;
 
 .heading{
     font-size: large;
+}
+
+.icon{
+    font-size: 6em;
+
+}
+
+.card-overlay .icon{
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1.1rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0.8rem;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+.card-overlay .icon:hover{
+    transform: scale(1.2);
+    color: #FF4500;
+    background: #000;
+    box-shadow: 0 0 2rem #FF4500;
+}
+.skill-card .icon:hover{
+    color: #FF4500;
 }
 .skills{
     display: flex;
@@ -347,15 +374,38 @@ hr{
         background: rgba(0, 0, 0, 0.9);
         display: none;
     }
+    .home, .about-items{
+        flex-direction: column;
+    }
+
+    .home img {
+        width: 80vw;
+    }
+    .heading{
+        font-size: 3rem ;
+    }
+
+    .skill-items{
+        grid-template-columns: repeat(2.1fr);
+    }
 }
 
 
 @media (max-width: 620px) {
-    
+    .skills-items{
+        grid-template-rows: repeat(1,1fr);
+    }
+    .projects-item{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .heading{
+        font-size: 2.7rem;
+    }
 }
 
 @media (max-width: 450px) {
+    html{
+        font-size:50% ;
+    }
     
 }
-
-
