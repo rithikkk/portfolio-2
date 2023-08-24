@@ -459,6 +459,15 @@ hr{
         background: rgba(0, 0, 0, 0.9);
         display: none;
     }
+    .menu-bar.active{
+        display: block;
+    }
+
+    .menu-bar a{
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
     .home, .about-items{
         flex-direction: column;
     }
@@ -472,6 +481,11 @@ hr{
 
     .skill-items{
         grid-template-columns: repeat(2.1fr);
+    }
+    .training-card img {
+        height: 100px;
+        
+
     }
 }
 
