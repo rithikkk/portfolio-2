@@ -75,6 +75,7 @@ section{
 
 .home-bio h{
     font-size: 2.5rem;
+    
 }
 
 span{
@@ -288,7 +289,6 @@ font-size: 1.8rem;
 
 }
 
-
 .projects{
     display: flex;
     align-items: center;
@@ -316,7 +316,46 @@ font-size: 1.8rem;
     object-fit: cover;
     object-position: center;
 }
+.card-cert{
+    background:rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
 
+.card-cert:hover{
+    background: rgba(0, 0, 0, 0);
+    color: #000;
+    transition: 0.4s all linear;
+}
+
+.card-cert:hover h1 {
+    color: white;
+}
+
+
+.card-cert .bx{
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1.1rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0.8rem;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+.card-cert .bx:hover{
+    transform: scale(1.2);
+    color: #FF4500;
+    background: #000;
+    box-shadow: 0 0 2rem #FF4500;
+}
 .card-overlay {
     background:rgba(0, 0, 0, 0.8);
     position: absolute;
@@ -352,6 +391,9 @@ font-size: 1.8rem;
     color: #FF4500;
     background: #000;
     box-shadow: 0 0 2rem #FF4500;
+}
+.tec  .bx:hover{
+    color: #fff;
 }
 
 .contact{
@@ -452,3 +494,73 @@ hr{
     }
     
 }
+
+.sociais {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+}
+
+.sociais .bx {
+    font-size: 50px;
+}
+.socialContainer {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.git:hover {
+    background-color: #171515;
+    transition-duration: .3s;
+}
+
+.gmail:hover {
+    background-color: #da1200;
+    transition-duration: .3s;
+}
+
+.linkedin:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    }
+
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
