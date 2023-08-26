@@ -510,6 +510,7 @@ hr{
 }
 
 .sociais {
+    
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -526,7 +527,7 @@ hr{
     width: 82px;
     height: 82px;
     border-radius: 50%;
-    background-color: rgb(50, 50, 50);
+    background: #0B141E;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -536,17 +537,19 @@ hr{
 
 .git:hover {
     background-color: #171515;
+    box-shadow: 0 0 1rem #fff;
     transition-duration: .3s;
 }
 
 .gmail:hover {
-    background-color: #da1200;
-    transition-duration: .3s;
+    color: #FF4500;
+    box-shadow: 0 0 1rem #FF4500;
 }
 
 .linkedin:hover {
     background-color: #0072b1;
     transition-duration: .3s;
+    box-shadow: 0 0 1rem #0072b1;
 }
 
 .socialContainer:active {
