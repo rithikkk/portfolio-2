@@ -96,6 +96,7 @@ span{
     width: 30vw;
     border-radius: 50%;
     animation: float 5s ease-in-out infinite;
+    padding: 30px;
 }
 
 @keyframes float{

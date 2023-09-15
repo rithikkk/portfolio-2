@@ -27,7 +27,7 @@ ScrollReveal().reveal('.profile-pic, .about-items, .skills-items, .projects-item
 
 
 const animText = new Typed ('.animated-text', {
-    strings: ['Desenvolvedor Full-Stack', 'Data Visualization'],
+    strings: ['Desenvolvedor Full-Stack', 'Data Visualization','Desenvolvedor Full-Stack','Data Visualization','Desenvolvedor Full-Stack', 'Data Visualization','Desenvolvedor Full-Stack','Data Visualization'],
     backSpeed: 100,
     typeSpeed: 100,
     backDelay: 900,
